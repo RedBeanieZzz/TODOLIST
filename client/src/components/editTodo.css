@@ -1,0 +1,55 @@
+/* main button */
+
+.btn {
+    border-radius: 5px;
+    padding: 1% 2%;
+    font-size: 20px;
+    color: #000;
+}
+
+.warning {
+    background-color: #ffa126d7;
+}
+
+.warning:hover{
+    background-color: #f39212cc;
+    color: #fff;
+}
+
+/* input and text */
+
+.modal-content {
+    background: url('https://64.media.tumblr.com/dbfb62a2f5f7c9c042b7e14144818774/tumblr_nndq8w3Leo1qcdtsho1_1280.jpg') ;
+}
+
+.edit {
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.edit:focus {
+    background-color: transparent;
+}
+
+
+
+/* buttons */
+
+.cancel  {
+    background-color: #ce1127c7;
+}
+
+.cancel:hover {
+    color: #f0f0f0;
+    background-color: #b40f22de;
+}
+
+.success {
+    background-color: #005758d8;
+}
+
+.success:hover{
+    color: #f0f0f0;
+    background-color: #004849d7;
+
+}

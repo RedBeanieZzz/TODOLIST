@@ -1,0 +1,15 @@
+.table {
+    margin: 100px 0 ;
+    border: none;
+    font-size: 20px;
+    text-align: left;
+}
+
+.danger {
+    background-color: #ce1127c7;
+}
+
+.danger:hover {
+    color: #f0f0f0;
+    background-color: #b40f22de;
+}

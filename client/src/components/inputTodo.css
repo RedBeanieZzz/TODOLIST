@@ -1,0 +1,38 @@
+
+.title {
+    margin: 22px;
+    font-size: 80px;
+}
+
+.form-input {
+    position:relative;
+    margin: 0 auto;
+    display: inline-flex;
+    flex-wrap: row nowrap;
+    width: 60%;
+    gap: 10px;
+}
+
+.form-control {
+    font-size: 30px;
+    border-radius: 10px;
+    border: 2px solid #281915;
+    background-color: transparent;
+    transition: .4s ;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    color: #281915;
+}
+
+.btn-input {
+    background-color: #005658;
+    width: 80px;
+    font-size: 20px;
+}
+
+.btn-input:hover {
+    color: #f0f0f0;
+    background-color: #004849 ;
+}

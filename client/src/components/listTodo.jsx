@@ -1,5 +1,6 @@
 import React, {Fragment, useEffect, useState} from "react";
 import EditTodos from "./editTodo";
+import './listTodo.css'
 
 const ListTodos = () => {
 
@@ -34,33 +35,29 @@ const ListTodos = () => {
 
     return (
     <Fragment>
-        <table class="table mt-5 text-center">
+        <table class="table ">
             <thead>
             <tr>
-                <th scope="col">Description</th>
-                <th scope="col">Edit</th>
-                <th scope="col">Delete</th>
+                <th>Check</th>
+                <th scope="col">Things to do:</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
             </tr>
             </thead>
             <tbody>
-                {/* <tr>
-                
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr> */}
                 {todos.map(todo => (
                     <tr key={todo.todo_id}>
+                        <td><input type="checkbox" class="checkbox"/></td>
                         <th scope="row">{todo.description}</th>
                         <td>
                             <EditTodos todo={todo} />
                         </td>
                         <td>
-                            <button className="btn btn-danger" onClick={() => deleteTodo(todo.todo_id)}>Delete</button>
+                            <button type="button" class="btn danger" data-bs-toggle="alert" onClick={() => deleteTodo(todo.todo_id)}>Delete</button>
                         </td>
                     </tr>
                 ))}
+
             </tbody>
         </table>
     </Fragment>

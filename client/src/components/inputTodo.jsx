@@ -1,4 +1,5 @@
 import React, {Fragment, useState} from "react";
+import './inputTodo.css';
 
 const InputTodo = () =>{
 
@@ -19,17 +20,13 @@ const InputTodo = () =>{
         }
     };
 
+    
     return (
     <Fragment>
-        <h1 className="text-center mt-5"> Pern ToDo List</h1>
-        <form className="d-flex mt-5" onSubmit={onSubmitForm}>
-            <input 
-                type="text" 
-                className="form-control" 
-                value={description}
-                onChange={e => setDescription(e.target.value)}
-                />
-            <button className="btn btn-success">Add</button>
+        <h1 className="title">To Do List</h1>
+        <form className="form-input" onSubmit={onSubmitForm}>
+            <input type="text" className="form-control" placeholder="Put something to do.." value={description} onChange={e => setDescription(e.target.value)}/>
+            <button className="btn btn-input" placeholder="Put your tasks here..">ADD</button>
         </form>
     </Fragment>
     );
